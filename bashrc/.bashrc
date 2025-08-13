@@ -139,6 +139,10 @@ export GEM_HOME=/home/aeket/.gem
 #shopt -s cdable_vars
 #export wiho=/mnt/c/Users/aeket/
 
+#set nvim to default editor
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+
 #projects
 alias dsa='cd ~/DSAI; source DSAI_venv/bin/activate'
 alias nlp='cd ~/NLP_APP/group_project/NLP_App_Group_TALL/; source nlp_venv/bin/activate'
