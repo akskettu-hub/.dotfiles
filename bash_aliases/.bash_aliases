@@ -1,0 +1,5 @@
+alias spdt='speedtest-cli'
+alias lsl='ls -l --color=auto'
+alias md='mkdir'
+alias nv='nvim'
+alias treig='tree . -a --gitignore'
