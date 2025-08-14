@@ -147,12 +147,8 @@ export EDITOR="$VISUAL"
 alias dsa='cd ~/DSAI; source DSAI_venv/bin/activate'
 alias nlp='cd ~/NLP_APP/group_project/NLP_App_Group_TALL/; source nlp_venv/bin/activate'
 
-#GEneral
-alias md='mkdir'
-alias spdt='speedtest-cli'
-alias nv='nvim'
-alias treig='tree . -a --gitignore'
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+eval "$(oh-my-posh init bash --config /home/aeket/.config/oh-my-posh/quick-term.omp.json)"
