@@ -88,13 +88,6 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-alias lsl='ls -l --color=auto'
-
-# Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
@@ -124,8 +117,6 @@ fi
 #export LC_ALL=C
 #export
 
-# All customatisaton for assignments for week 5 are below this line.
-
 export PATH=$PATH:$HOME/KIK-LG221/week5
 export PATH=$PATH:$HOME/aeket/.gem/bin
 #this alias automatically cd's to my windows desktop very useful when I want to quickly access something acrross the two OS.
@@ -143,12 +134,13 @@ export GEM_HOME=/home/aeket/.gem
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
-#projects
-alias dsa='cd ~/DSAI; source DSAI_venv/bin/activate'
-alias nlp='cd ~/NLP_APP/group_project/NLP_App_Group_TALL/; source nlp_venv/bin/activate'
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
-eval "$(oh-my-posh init bash --config /home/aeket/.config/oh-my-posh/quick-term.omp.json)"
+# For oh-my-posh terminal prompt:
+# If omp is installed in local bin,
+# This line:
+# eval "$(oh-my-posh init bash --config /home/aeket/.config/oh-my-posh/quick-term.omp.json)"
+# has to be in profile
+# because local bin is not in $PATH when .bashrc is evaluated.
