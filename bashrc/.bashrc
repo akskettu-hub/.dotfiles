@@ -119,16 +119,7 @@ fi
 
 export PATH=$PATH:$HOME/KIK-LG221/week5
 export PATH=$PATH:$HOME/aeket/.gem/bin
-#this alias automatically cd's to my windows desktop very useful when I want to quickly access something acrross the two OS.
-#I also have a similar alias for the windows home directory
-alias windesk='cd /mnt/c/Users/aeket/Desktop/'
-#this one cds to my one drive folder where I keep all my files related to this year's studies.
-alias oneuni='cd /mnt/c/Users/aeket/OneDrive\ -\ University\ of\ Helsinki/'
 export GEM_HOME=/home/aeket/.gem
-
-#trying to set up cdable variables. Works but is a bit pointless because it can't be used with cp or mv.
-#shopt -s cdable_vars
-#export wiho=/mnt/c/Users/aeket/
 
 #set nvim to default editor
 export VISUAL=nvim

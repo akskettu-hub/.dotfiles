@@ -13,3 +13,7 @@ alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
 alias lsl='ls -lFh --color=auto'
+
+# WSL Laptop shortcuts
+alias windesk='cd /mnt/c/Users/aeket/Desktop/'
+alias oneuni='cd /mnt/c/Users/aeket/OneDrive\ -\ University\ of\ Helsinki/'
