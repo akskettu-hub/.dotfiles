@@ -3,21 +3,20 @@ local s = ls.snippet
 local t = ls.text_node
 local i = ls.insert_node
 local c = ls.choice_node
-local f = ls.function_node
+-- local f = ls.function_node
 -- local d = ls.dynamic_node
 -- local sn = ls.snippet_node
 
 local fmt = require("luasnip.extras.fmt").fmt
 
 return {
-  s(
-    "arf",
+  s("arf",
     fmt(
       [[
-    const {} = {}({}) => {{
-      {}
-    }}
-  ]],
+        const {} = {}({}) => {{
+          {}
+        }}
+      ]],
       {
         i(1, "fname"),
         c(2, { t(""), t("async ") }),
@@ -27,12 +26,11 @@ return {
     )
   ),
 
-  s(
-    "arfs",
+  s("arfs",
     fmt(
       [[
-    const {} = {}{} => {}
-  ]],
+        const {} = {}{} => {}
+      ]],
       {
         i(1, "fname"),
         c(2, { t(""), t("async ") }),
