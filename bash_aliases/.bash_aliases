@@ -7,6 +7,7 @@ alias treig='tree . -a --gitignore'
 alias dot='cd ~/.dotfiles'
 alias dsa='cd ~/DSAI; source DSAI_venv/bin/activate'
 alias nlp='cd ~/NLP_APP/group_project/NLP_App_Group_TALL/; source nlp_venv/bin/activate'
+alias scraps='cd ~/scraps/'
 
 # ls
 alias ll='ls -alFh'
