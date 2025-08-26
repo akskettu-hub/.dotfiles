@@ -106,7 +106,7 @@ fi
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
+  elif [ -f /etc/bash_completion ]; then 
     . /etc/bash_completion
   fi
 fi
@@ -128,6 +128,16 @@ export EDITOR="$VISUAL"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+export ANDROID_HOME=/mnt/c/Users/aeket/AppData/Local/Android/Sdk
+export ANDROID_SDK_ROOT="/mnt/c/Users/aeket/AppData/Local/Android/Sdk"
+export PATH="$ANDROID_SDK_ROOT/platform-tools:$PATH"
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH="$HOME/bin:$PATH"
+
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
 
 # For oh-my-posh terminal prompt:
 # If omp is installed in local bin,
