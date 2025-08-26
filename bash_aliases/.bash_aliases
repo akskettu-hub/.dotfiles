@@ -8,6 +8,7 @@ alias dot='cd ~/.dotfiles'
 alias dsa='cd ~/DSAI; source DSAI_venv/bin/activate'
 alias nlp='cd ~/NLP_APP/group_project/NLP_App_Group_TALL/; source nlp_venv/bin/activate'
 alias scraps='cd ~/scraps/'
+alias fs10='cd /mnt/c/Users/aeket/FullStack/part10/rate-repository-app'
 
 # ls
 alias ll='ls -alFh'
