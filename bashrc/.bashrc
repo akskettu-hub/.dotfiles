@@ -139,9 +139,12 @@ export PATH="$HOME/bin:$PATH"
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 
+export PATH=$PATH:/home/aeket/.local/bin
+
 # For oh-my-posh terminal prompt:
 # If omp is installed in local bin,
 # This line:
 # eval "$(oh-my-posh init bash --config /home/aeket/.config/oh-my-posh/quick-term.omp.json)"
 # has to be in profile
 # because local bin is not in $PATH when .bashrc is evaluated.
+eval "$(oh-my-posh init bash --config /home/aeket/.config/oh-my-posh/quick-term.omp.json)"
