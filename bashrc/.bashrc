@@ -140,7 +140,8 @@ export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 
 export PATH=$PATH:/home/aeket/.local/bin
-
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+export PATH="$HOME/.local/bin:$PATH"
 # For oh-my-posh terminal prompt:
 # If omp is installed in local bin,
 # This line:
