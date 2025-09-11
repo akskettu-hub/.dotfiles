@@ -8,8 +8,6 @@ case $- in
 *) return ;;
 esac
 
-alias winhome='cd /mnt/c/Users/aeket/'
-
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -117,10 +115,6 @@ fi
 #export LC_ALL=C
 #export
 
-export PATH=$PATH:$HOME/KIK-LG221/week5
-export PATH=$PATH:$HOME/aeket/.gem/bin
-export GEM_HOME=/home/aeket/.gem
-
 #set nvim to default editor
 export VISUAL=nvim
 export EDITOR="$VISUAL"
@@ -128,16 +122,6 @@ export EDITOR="$VISUAL"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-
-export ANDROID_HOME=/mnt/c/Users/aeket/AppData/Local/Android/Sdk
-export ANDROID_SDK_ROOT="/mnt/c/Users/aeket/AppData/Local/Android/Sdk"
-export PATH="$ANDROID_SDK_ROOT/platform-tools:$PATH"
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH="$HOME/bin:$PATH"
-
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
-export PATH=$JAVA_HOME/bin:$PATH
 
 export PATH=$PATH:/home/aeket/.local/bin
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
