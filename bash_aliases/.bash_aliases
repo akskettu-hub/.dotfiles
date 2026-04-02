@@ -18,8 +18,9 @@ alias la='ls -A'
 alias l='ls -CF'
 alias lsl='ls -lFh --color=auto'
 
-alias quitter='cd /home/aeket/src/QuitTracker; python3 main.py; cd -'
+# alias quitter='cd /home/aeket/src/QuitTracker; python3 main.py; cd -'
 
+alias kittyupdate='curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin'
 # Borg backup commands
 
 # T7 has to be mounted for this
