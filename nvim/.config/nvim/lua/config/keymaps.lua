@@ -22,3 +22,12 @@ vim.keymap.set({ "i", "s" }, "<C-e>", function()
     ls.change_choice(1)
   end
 end, { silent = true })
+
+-- Debugging keymaps
+local dap = require("dap")
+vim.keymap.set("n", "<Leader>dt", dap.toggle_breakpoint, {})
+vim.keymap.set("n", "<Leader>dc", dap.continue, {})
+
+vim.keymap.set("n", "<Leader>du", function()
+  require("dapui").toggle()
+end)
