@@ -25,9 +25,27 @@ end, { silent = true })
 
 -- Debugging keymaps
 local dap = require("dap")
-vim.keymap.set("n", "<Leader>dt", dap.toggle_breakpoint, {})
-vim.keymap.set("n", "<Leader>dc", dap.continue, {})
+vim.keymap.set("n", "<F5>", dap.continue, {})
+vim.keymap.set("n", "<F2>", dap.step_over, {})
+vim.keymap.set("n", "<F3>", dap.step_into, {})
+vim.keymap.set("n", "<F4>", dap.step_out, {})
 
+vim.keymap.set("n", "<Leader>db", dap.toggle_breakpoint, {})
+vim.keymap.set("n", "<Leader>dB", function()
+  dap.set_breakpoint(vim.fn.input("Breakpoint condition: "))
+end)
+
+vim.keymap.set("n", "<Leader>dr", dap.repl.open)
+vim.keymap.set("n", "<Leader>dl", dap.run_last)
+
+vim.keymap.set("n", "<Leader>dc", function()
+  dap.clear_breakpoints()
+end)
+vim.keymap.set("n", "<Leader>dq", function()
+  dap.terminate()
+end)
+
+-- dapui
 vim.keymap.set("n", "<Leader>du", function()
   require("dapui").toggle()
 end)
