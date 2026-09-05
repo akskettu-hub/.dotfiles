@@ -3,6 +3,8 @@ alias md='mkdir'
 alias nv='nvim'
 alias treig='tree . -a --gitignore'
 alias clit="xclip -sel clip"
+alias aven='source venv/bin/activate'
+alias aven.='source .venv/bin/activate'
 
 #projects
 alias dot='cd ~/.dotfiles'
@@ -11,6 +13,7 @@ alias nlp='cd ~/NLP_APP/group_project/NLP_App_Group_TALL/; source nlp_venv/bin/a
 alias scraps='cd ~/scraps/'
 alias fs10='cd /mnt/c/Users/aeket/FullStack/part10/rate-repository-app'
 alias rmceecmeta='/home/aeket/Documents/Uni/Corpora/ceec_assignment/rm_metadata.sh'
+alias handmade='cd ~/src/HandmadeHero/'
 
 # ls
 alias ll='ls -alFh'

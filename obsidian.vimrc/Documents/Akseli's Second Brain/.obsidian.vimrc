@@ -7,6 +7,12 @@ nmap k gk
 vmap j gj
 vmap k gk
 
+" Set C-u and C-d to center.
+nnoremap <C-u> <C-u>zz
+nnoremap <C-d> <C-d>zz
+vnoremap <C-u> <C-u>zz
+vnoremap <C-d> <C-d>zz
+
 "exit insert move
 imap jj <Esc>
 
@@ -14,7 +20,7 @@ imap jj <Esc>
 exmap tabnext obcommand workspace:next-tab
 nmap gt :tabnext<CR>
 exmap tabprev obcommand workspace:previous-tab
-nmap gT :tabprev<CR>
+nmap gr :tabprev<CR>
 
 " integrating gx,gf,gd for vim {my way.. ok}
 exmap followBothLinksAndNotes obcommand editor:follow-link
@@ -33,7 +39,7 @@ map <Space>p :pasteinto
 " we all know that the built-in vim in obsidian is limited
 " so some features would not exist
 " but we can still map/link to some corresponding obsidian ones.. as follows
-	" like folds
+" like folds
 
 exmap togglefold obcommand editor:toggle-fold
 nmap zo :togglefold
@@ -69,6 +75,10 @@ nmap <Space>d :daily
 " Toggle file explorer
 exmap tleftbar obcommand app:toggle-left-sidebar
 nmap <Space>e :tleftbar
+
+" Toggle right side-bar
+exmap trightbar obcommand app:toggle-right-sidebar
+nmap <Space>i :trightbar
 
 " Insert templates
 exmap ins_temp obcommand templater-obsidian:insert-templater
