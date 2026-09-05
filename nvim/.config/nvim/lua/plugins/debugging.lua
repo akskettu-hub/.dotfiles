@@ -1,8 +1,5 @@
 return {
   {
-    "mfussenegger/nvim-dap",
-  },
-  {
     "rcarriga/nvim-dap-ui",
     dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" },
     config = function()
@@ -20,13 +17,34 @@ return {
       dap.listeners.before.event_exited["dapui_config"] = function()
         dapui.close()
       end
+
+      dap.adapters.gdb = {
+        type = "executable",
+        command = "gdb",
+        args = {
+          "-i",
+          "dap",
+        },
+      }
+
+      dap.configurations.c = {
+        {
+          name = "Launch",
+          type = "gdb",
+          request = "launch",
+          program = function()
+            return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+          end,
+          cwd = "${workspaceFolder}",
+        },
+      }
     end,
   },
   {
     "mfussenegger/nvim-dap-python",
     dependencies = { "mfussenegger/nvim-dap" },
     config = function()
-      local path = "~/.virtualenvs/debugpy/bin/python"
+      local path = vim.fn.expand("~/.virtualenvs/debugpy/bin/python")
       require("dap-python").setup(path)
     end,
   },
